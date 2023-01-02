@@ -1,0 +1,262 @@
+/*--------------------------------------*/
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 20px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+  font-style: normal;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------------------------*/
+
+:root {
+  --bg-green-color: #edf2ec;
+  --text-black: #010201;
+  --text-orange: #e06733;
+  --text-green: #499a18;
+  --text-light-grey: #717171;
+  --text-dark-grey: #636060;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.75;
+  color: var(--text-dark-grey);
+  background-color: var(--bg-green-color);
+}
+/*--------------------------------------*/
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 1 auto;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 109px;
+  width: 100%;
+}
+/*--------------------------------------*/
+/*Header*/
+
+.header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.header__container {
+  width: 100vw;
+  min-height: 134px;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__pic {
+  width: 20px;
+}
+.logo__txt {
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-black);
+}
+.header__navigation {
+  flex: 1 1 auto;
+}
+.navigation {
+}
+.navigation__list {
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 50px;
+  color: var(--text-black);
+
+  display: flex;
+  justify-content: end;
+}
+.navigation__item:not(:last-child) {
+  margin-right: 46px;
+}
+.navigation__link {
+  display: block;
+  color: var(--text-black);
+}
+
+/*--------------------------------------*/
+/*Welcome*/
+
+.welcome {
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+.welcome__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.welcome__img {
+  max-width: 449px;
+}
+.welcome__wrapper {
+  max-width: 550px;
+}
+.welcome__title {
+  font-size: 45px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--text-light-grey);
+
+  margin-bottom: 42px;
+}
+.welcome__title span {
+  color: var(--text-green);
+}
+.welcome__text {
+  margin-bottom: 48px;
+}
+.text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.75;
+}
+.welcome__btn {
+  text-transform: uppercase;
+  color: var(--text-black);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  padding: 14px 27px;
+  border: 2px solid #e06733;
+  border-radius: 10px;
+  background-color: transparent;
+}
+/*--------------------------------------*/
+/*About*/
+.about {
+  background-color: var(--white);
+}
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 93px;
+  padding-bottom: 94px;
+}
+.about__wrapper {
+  max-width: 605px;
+}
+.about__title {
+  margin-bottom: 40px;
+  width: 463px;
+}
+.title {
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.3;
+  color: var(--text-green);
+}
+.title span {
+  color: var(--text-orange);
+}
+.about__text {
+}
+.text {
+}
+.about__img {
+}
+/*--------------------------------------*/
+/*Footer*/
+/*--------------------------------------*/
+/*Footer*/
+/*--------------------------------------*/
+/*Footer*/
+/*--------------------------------------*/
+/*Footer*/
+.footer {
+  background-color: aqua;
+}
