@@ -276,6 +276,8 @@ body {
   margin-right: 38px;
 }
 .service__button {
+}
+.button {
   font-family: "Inika", serif;
   font-weight: 400;
   font-size: 20px;
@@ -328,7 +330,79 @@ body {
 }
 
 /*--------------------------------------*/
-/*Footer*/
+/*Prices*/
+
+.prices {
+  background-color: var(--white);
+  padding-top: 40px;
+  padding-bottom: 115px;
+}
+.prices__container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+.prices__column {
+}
+.prices__title-left {
+  margin-bottom: 60px;
+}
+.prices__column-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.prices__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+  color: #010201;
+}
+.pricese__title-right {
+  max-width: 452px;
+  text-align: right;
+  margin-bottom: 39px;
+}
+.pricese__title-right span {
+  color: var(--text-green);
+}
+.prices__accordion {
+  padding: 34px 41px;
+  border-radius: 20px;
+  border: 1px solid #e3e1d5;
+}
+.prices__item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--text-black);
+  padding: 16px 110px 16px 40px;
+  background-color: var(--bg-green-color);
+  border-radius: 20px;
+  position: relative;
+}
+.prices__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.prices__item::after {
+  position: absolute;
+  display: block;
+  right: 40px;
+  top: 17px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("..assets/img/arrow.png");
+  background-color: #d9d9d9;
+  border-radius: 8px;
+}
+.pricese__title {
+}
+.prices__button {
+  display: block;
+  margin-bottom: 39px;
+}
+
 /*--------------------------------------*/
 /*Footer*/
 /*--------------------------------------*/
