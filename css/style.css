@@ -457,5 +457,39 @@ body {
 /*--------------------------------------*/
 /*Footer*/
 .footer {
-  background-color: aqua;
+  background-color: var(--white);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__left-item:not(:last-child) {
+  margin-right: 20px;
+}
+.footer__copiright {
+}
+.footer__year {
+}
+.footer__github {
+}
+.footer__center {
+}
+.footer__logo {
+}
+.footer__right {
+}
+.footer__social-list {
+}
+.social-list {
+}
+.footer__social-item {
+}
+.footer__social-link {
 }
