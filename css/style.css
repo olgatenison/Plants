@@ -172,8 +172,13 @@ body {
 .navigation__link {
   display: block;
   color: var(--text-black);
+  transition: all 0.3s ease 0s;
 }
-
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link:active {
+  color: var(--text-orange);
+}
 /*--------------------------------------*/
 /*Welcome*/
 
@@ -218,11 +223,19 @@ body {
   font-size: 16px;
   line-height: 1.25;
   height: 44px;
+  padding-left: 27px;
+  padding-right: 27px;
 
-  padding: 14px 27px;
   border: 2px solid #e06733;
   border-radius: 10px;
   background-color: transparent;
+  transition: all 0.3s ease 0s;
+}
+.welcome__btn:hover,
+.welcome__btn:focus,
+.welcome__btn:active {
+  background-color: var(--text-orange);
+  color: var(--white);
 }
 /*--------------------------------------*/
 /*About*/
@@ -293,8 +306,15 @@ body {
   border: 1px solid var(--text-orange);
   border-radius: 5px;
   background-color: transparent;
-}
 
+  transition: all 0.3s ease 0s;
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--text-orange);
+  color: var(--white);
+}
 .service__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -393,19 +413,20 @@ body {
   margin-bottom: 27px;
 }
 .prices__item::after {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  right: 40px;
-  top: 17px;
   content: "";
   width: 16px;
   height: 16px;
-
-  background-size: 16px 16px;
+  display: inline-block;
+  right: 40px;
+  top: 17px;
+  background-image: url("../assets/img/arrow.svg");
+  background-size: 10px 8px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #d9d9d9;
-  background-image: url(".assets/img/arrow.png");
+
   border-radius: 8px;
+  position: absolute;
 }
 .prices__title {
 }
@@ -455,12 +476,19 @@ body {
 }
 .contacts__text::after {
   content: "";
-  background-image: url(".assets/img/arrow-down.png") cover;
   width: 16px;
   height: 16px;
-  display: block;
+  display: inline-block;
+  right: 40px;
+  top: 17px;
+  background-image: url("../assets/img/arrow-white.svg");
+  background-size: 10px 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #aea1a1;
+
+  border-radius: 8px;
   position: absolute;
-  z-index: 2;
 }
 /*--------------------------------------*/
 /*Footer*/
@@ -495,6 +523,15 @@ body {
 }
 .footer__center {
   padding-left: 30px;
+}
+.footer__center a {
+  color: var(--text-black);
+  transition: all 0.3s ease 0s;
+}
+.footer__center a:hover,
+.footer__center a:focus,
+.footer__center a:active {
+  color: var(--text-orange);
 }
 .footer__logo {
 }
