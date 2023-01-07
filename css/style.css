@@ -130,7 +130,7 @@ body {
 }
 .header__container {
   width: 100vw;
-  min-height: 134px;
+  min-height: 124px;
   display: flex;
   align-items: center;
 }
@@ -142,6 +142,7 @@ body {
 }
 .logo__pic {
   width: 20px;
+  padding-bottom: 6px;
 }
 .logo__txt {
   font-family: "Inika", serif;
@@ -216,6 +217,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  height: 44px;
 
   padding: 14px 27px;
   border: 2px solid #e06733;
@@ -238,14 +240,15 @@ body {
   max-width: 605px;
 }
 .about__title {
-  margin-bottom: 40px;
   width: 463px;
+  margin-bottom: 40px;
 }
 
 .title span {
   color: var(--text-orange);
 }
 .about__text {
+  line-height: 1.5;
 }
 .about__img {
   max-width: 463px;
@@ -262,7 +265,7 @@ body {
   display: flex;
   align-items: center;
   margin-top: 40px;
-  margin-bottom: 70px;
+  margin-bottom: 75px;
 }
 .service__title {
   max-width: 306px;
@@ -277,6 +280,7 @@ body {
   margin-right: 38px;
 }
 .service__button {
+  width: 161px;
 }
 .button {
   font-family: "Inika", serif;
@@ -294,8 +298,8 @@ body {
 .service__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 55px;
-  column-gap: 116px;
+  row-gap: 43px;
+  column-gap: 110px;
 }
 .service__item {
 }
@@ -335,8 +339,8 @@ body {
 
 .prices {
   background-color: var(--white);
-  padding-top: 40px;
-  padding-bottom: 115px;
+  padding-top: 30px;
+  padding-bottom: 108px;
 }
 .prices__container {
   width: 100vw;
@@ -375,15 +379,18 @@ body {
 .prices__item {
   font-weight: 700;
   font-size: 20px;
+
   line-height: 1;
   color: var(--text-black);
+  width: 250px;
+
   padding: 16px 110px 16px 40px;
   background-color: var(--bg-green-color);
   border-radius: 20px;
   position: relative;
 }
 .prices__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 }
 .prices__item::after {
   position: absolute;
@@ -404,7 +411,8 @@ body {
 }
 .prices__button {
   display: block;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
+  line-height: 1.2;
 }
 /*--------------------------------------*/
 /*Contacts*/
@@ -420,7 +428,7 @@ body {
 }
 .contacts__img {
   max-width: 400px;
-  margin-top: -8px;
+  margin-top: -59px;
 }
 .contacts__wrapper {
   display: flex;
@@ -486,6 +494,7 @@ body {
 .footer__github {
 }
 .footer__center {
+  padding-left: 30px;
 }
 .footer__logo {
 }
@@ -496,9 +505,10 @@ body {
 .social-list {
   display: flex;
   align-items: center;
+  padding-top: 5px;
 }
 .footer__social-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .footer__social-link {
 }
