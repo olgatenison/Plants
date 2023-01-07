@@ -547,5 +547,13 @@ body {
 .footer__social-item:not(:last-child) {
   margin-right: 20px;
 }
+.footer__social-item img {
+  transition: all 0.3s ease 0s;
+}
+.footer__social-item:hover img,
+.footer__social-item:focus img,
+.footer__social-item:active img {
+  transform: scale(0.8);
+}
 .footer__social-link {
 }
