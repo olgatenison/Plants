@@ -336,6 +336,11 @@ body {
   margin-bottom: 12px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  transition: all 0.3s ease 0s;
+}
+.card__img:hover,
+.card__img:focus {
+  scale: 1.03;
 }
 .card__title {
   font-weight: 700;
