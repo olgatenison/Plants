@@ -429,7 +429,27 @@ body {
   color: var(--text-light-grey);
   margin-bottom: 36px;
 }
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 769px) {
+  .service__container {
+    margin-bottom: 70px;
+  }
+  .service__wrapper {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 75px;
+  }
+  .service__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 38px;
+    column-gap: 107px;
+  }
+  .service__title {
+    max-width: 306px;
+    margin-bottom: 40px;
+  }
 }
 /*--------------------------------------*/
 /*Prices*/
@@ -514,6 +534,21 @@ body {
 }
 
 @media screen and (max-width: 968px) {
+  .prices {
+    background-color: var(--white);
+    padding-top: 40px;
+    padding-bottom: 108px;
+  }
+  .prices__title {
+    font-size: 35px;
+    line-height: 1.25;
+  }
+  .prices__title-right {
+    margin-top: 129px;
+    max-width: 452px;
+    text-align: right;
+    margin-bottom: 39px;
+  }
 }
 /*--------------------------------------*/
 /*Contacts*/
