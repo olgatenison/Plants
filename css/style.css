@@ -419,6 +419,9 @@ body {
   padding-left: 10px;
 }
 @media screen and (max-width: 968px) {
+  .about__wrapper {
+    max-width: 100%;
+  }
   .about__container {
     display: flex;
     align-items: center;
@@ -445,12 +448,31 @@ body {
     line-height: 1.5;
     margin-bottom: 40px;
   }
+  .about__text p {
+    max-width: 100%;
+  }
   .about__img {
     max-width: 250px;
   }
   .welcome {
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__container {
+    padding-top: 30px;
+    padding-bottom: 31px;
+  }
+  .title {
+    font-size: 25px;
+    max-width: 288px;
+    margin-bottom: 20px;
+  }
+  .about__text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 0px;
   }
 }
 /*--------------------------------------*/
