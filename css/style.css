@@ -179,6 +179,39 @@ body {
 .navigation__link:active {
   color: var(--text-orange);
 }
+
+.header__burger {
+  display: none;
+  width: 40px;
+  height: 24px;
+  position: relative;
+}
+
+.burger {
+}
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-light-grey);
+  position: absolute;
+  left: 0;
+}
+.burger__line_first {
+  top: 0;
+}
+.burger__line_second {
+  top: 8px;
+}
+.burger__line_third {
+  top: 15px;
+}
+.burger__line_fours {
+  bottom: 0;
+}
+.header__nav-close {
+  display: none;
+}
 @media screen and (max-width: 968px) {
   .container {
     padding: 0px 50px;
@@ -187,7 +220,70 @@ body {
     min-height: 117px;
   }
 }
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0px 25px;
+  }
+  .header__container {
+    min-height: 96px;
+    justify-content: space-between;
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__navigation {
+    display: block;
+  }
+  .header__navigation-active {
+  }
+  .navigation__list {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-green-color);
+    z-index: 10;
+    padding: 75px;
+    transition: all 0.3s ease 0s;
+    transform: translateX(100%);
 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .navigation__link {
+    font-size: 36px;
+    margin-top: 60px;
+  }
+  .header__nav-close {
+  }
+  .header__nav-close-line {
+    position: absolute;
+    z-index: 12;
+    display: block;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    right: 20px;
+    background-color: var(--text-light-grey);
+  }
+  .header__nav-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    z-index: 11;
+  }
+
+  .header__nav-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .header__nav-close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
 /*--------------------------------------*/
 /*Welcome*/
 
@@ -677,4 +773,19 @@ body {
 }
 
 @media screen and (max-width: 968px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__center {
+    padding-left: 0px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
