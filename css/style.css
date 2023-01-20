@@ -358,7 +358,7 @@ body {
     flex-direction: row-reverse;
   }
   .welcome__img {
-    max-width: 280px;
+    max-width: 40%;
     padding-left: 20px;
   }
   .welcome__title {
@@ -535,7 +535,7 @@ body {
 .service__link {
 }
 .card {
-  display: inline-block;
+  display: block;
   border-radius: 20px;
   background-color: var(--bg-green-color);
   border: 1px solid var(--super-light-grey);
@@ -546,6 +546,7 @@ body {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   transition: all 0.3s ease 0s;
+  width: 100%;
 }
 .card__img:hover,
 .card__img:focus {
@@ -567,26 +568,56 @@ body {
   color: var(--text-light-grey);
   margin-bottom: 36px;
 }
-@media screen and (max-width: 769px) {
-  .service__container {
-    margin-bottom: 70px;
-  }
+@media screen and (max-width: 1124px) {
   .service__wrapper {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
     margin-top: 40px;
-    margin-bottom: 75px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .service__title {
+    margin-bottom: 40px;
+    margin-right: 0px;
   }
   .service__list {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 38px;
     column-gap: 107px;
   }
+}
+@media screen and (max-width: 767px) {
+  .service__list {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 34px;
+  }
+  .card {
+    display: block;
+    min-width: 220px;
+    overflow: hidden;
+  }
+  .service__button-list {
+    flex-wrap: wrap;
+  }
+  .service__button {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    padding: 7px 28px;
+    margin-bottom: 9px;
+  }
+  .service__button-item:not(:last-child) {
+    margin-right: 10px;
+  }
   .service__title {
-    max-width: 306px;
-    margin-bottom: 40px;
+    max-width: 187px;
+  }
+  .service__container {
+    margin-top: 27px;
+    margin-bottom: 27px;
   }
 }
 /*--------------------------------------*/
