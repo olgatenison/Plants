@@ -706,17 +706,52 @@ body {
   .prices {
     background-color: var(--white);
     padding-top: 40px;
-    padding-bottom: 108px;
+    padding-bottom: 88px;
   }
   .prices__title {
     font-size: 35px;
     line-height: 1.25;
   }
   .prices__title-right {
-    margin-top: 129px;
-    max-width: 452px;
-    text-align: right;
-    margin-bottom: 39px;
+    max-width: 297px;
+    margin-top: 100px;
+    font-size: 25px;
+    line-height: 1.4;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .prices {
+    background-color: var(--white);
+    padding-top: 25px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .prices__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .prices__title {
+    font-size: 35px;
+    line-height: 1.25;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .prices__title-right {
+    max-width: 230px;
+    margin-top: 19px;
+    font-size: 20px;
+    line-height: 1.75;
+    margin-bottom: 14px;
+  }
+  .prices__column-right {
+    align-items: center;
+  }
+  .prices__column-right img {
+    display: none;
   }
 }
 /*--------------------------------------*/
