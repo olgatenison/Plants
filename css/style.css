@@ -561,11 +561,12 @@ body {
   color: var(--text-light-grey);
   margin-bottom: 36px;
 }
-.service__container:hover .service__button-item {
-  filter: blur(80px);
+.service__list:hover .service__item {
+  filter: blur(5px);
 }
-.service__container .service__button-item:hover {
-  filter: none;
+.service__list .service__item:hover {
+  filter: blur(0px);
+  display: block;
 }
 
 @media screen and (max-width: 1124px) {
