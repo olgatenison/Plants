@@ -1,5 +1,6 @@
-const anchors = document.querySelectorAll('a[href^="#"]');
+//ancors-scroll
 
+const anchors = document.querySelectorAll('a[href^="#"]');
 for (let anchor of anchors) {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -13,3 +14,13 @@ for (let anchor of anchors) {
     });
   });
 }
+
+//menu-burger
+
+(function () {
+  const burger = querySelector(".burger");
+  const navigation = querySelector(".navigation");
+
+  burger.classlist.toggle("menu-open");
+  navigation.classlist.toggle("menu-open");
+})();
