@@ -562,7 +562,7 @@ body {
   margin-bottom: 36px;
 }
 .service__container:hover .service__button-item {
-  filter: blur(10px);
+  filter: blur(80px);
 }
 .service__container .service__button-item:hover {
   filter: none;
