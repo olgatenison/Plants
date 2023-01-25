@@ -31,6 +31,7 @@ for (let anchor of anchors) {
     for (let i = 0; i <= menuLinks.length; i += 1) {
       menuLinks[i].addEventListener("click", () => {
         navigation.classList.remove("menu-open");
+        burger.classList.remove("menu-open");
       });
     }
   }
