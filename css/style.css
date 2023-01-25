@@ -232,8 +232,7 @@ body {
   }
   .burger {
     display: block;
-    position: fixed;
-    right: 30px;
+
     z-index: 30;
   }
   .navigation__list {
