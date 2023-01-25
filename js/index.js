@@ -18,9 +18,20 @@ for (let anchor of anchors) {
 //menu-burger
 
 (function () {
-  const burger = querySelector(".burger");
-  const navigation = querySelector(".navigation");
+  const burger = document.querySelector(".burger");
+  const navigation = document.querySelector(".navigation");
+  const menuLinks = document.querySelectorAll(".navigation__link");
 
-  burger.classlist.toggle("menu-open");
-  navigation.classlist.toggle("menu-open");
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("menu-open");
+    navigation.classList.toggle("menu-open");
+  });
+
+  if (window.innerWidth < 768) {
+    for (let i = 0; i <= menuLinks.length; i += 1) {
+      menuLinks[i].addEventListener("click", () => {
+        navigation.classList.remove("menu-open");
+      });
+    }
+  }
 })();
