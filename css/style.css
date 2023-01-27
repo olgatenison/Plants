@@ -706,9 +706,14 @@ body {
   border-radius: 8px;
   position: absolute;
 }
-.active {
+.prices__item.active {
   background-color: #d6e7d2;
   border-radius: 20px 20px 0 0;
+}
+.active.prices__item::after {
+  content: "";
+  background-color: var(--btn-price-grey);
+  background-image: url("../assets/img/arrowup.svg");
 }
 .prices__title {
 }
@@ -718,15 +723,18 @@ body {
   line-height: 1.2;
   cursor: pointer;
 }
-
 .prices__details {
+  display: none;
+}
+.active.prices__details {
   background-color: #d6e7d2;
   border-radius: 0 0 20px 20px;
   padding: 6px 40px 12px 40px;
-
+  display: block;
   max-height: 120px;
   transition: all 0.3s ease;
 }
+
 .prices__rate {
   cursor: pointer;
 }
@@ -772,8 +780,14 @@ body {
   font-size: 14px;
   line-height: 1.4;
   color: var(--text-light-grey);
+  transition: 0.3s all ease;
 }
-
+.prices__order:hover,
+.prices__order:focus,
+.prices__order:active {
+  background-color: var(--text-orange);
+  color: var(--white);
+}
 @media screen and (max-width: 968px) {
   .prices {
     background-color: var(--white);

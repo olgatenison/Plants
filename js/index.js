@@ -39,4 +39,9 @@ for (let anchor of anchors) {
 
 //accordion
 
-(function () {})();
+(function () {
+  document.querySelectorAll(".prices__item").forEach((e) => {
+    let priceDetails = e.nextElementSibling;
+    console.log(priceDetails);
+  });
+})();
