@@ -84,6 +84,7 @@ h6 {
   --text-green: #499a18;
   --text-light-grey: #717171;
   --text-dark-grey: #636060;
+  --btn-price-grey: #aea1a1;
   --super-light-grey: #e3e1d5;
   --white: #ffffff;
 }
@@ -686,7 +687,7 @@ body {
   border-radius: 20px;
   position: relative;
 }
-.prices__item:not(:last-child) {
+.prices__accordion li:not(:last-child) {
   margin-bottom: 27px;
 }
 .prices__item::after {
@@ -705,20 +706,31 @@ body {
   border-radius: 8px;
   position: absolute;
 }
+.active {
+  background-color: #d6e7d2;
+  border-radius: 20px 20px 0 0;
+}
 .prices__title {
 }
 .prices__button {
   display: block;
-  margin-bottom: 35px;
+
   line-height: 1.2;
+  cursor: pointer;
 }
+
 .prices__details {
   background-color: #d6e7d2;
-  padding: 6px 40px;
   border-radius: 0 0 20px 20px;
+  padding: 6px 40px 12px 40px;
+
+  max-height: 120px;
+  transition: all 0.3s ease;
 }
 .prices__rate {
+  cursor: pointer;
 }
+
 .prices__desc {
   font-family: Inter;
   font-weight: 300;
@@ -726,7 +738,18 @@ body {
   line-height: 1;
   color: var(--text-light-grey);
   max-width: 169px;
+  position: relative;
 }
+.prices__desc::before {
+  content: "";
+  background-color: var(--btn-price-grey);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+
 .prices__prise {
   color: var(--text-black);
   font-weight: 400;

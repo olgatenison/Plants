@@ -36,3 +36,7 @@ for (let anchor of anchors) {
     }
   }
 })();
+
+//accordion
+
+(function () {})();
