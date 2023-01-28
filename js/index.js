@@ -38,21 +38,15 @@ for (let anchor of anchors) {
 })();
 
 //accordion
-
-const accordionItems = document.querySelectorAll(".prices__price");
-
-accordionItems.forEach((item) => {
-  item.addEventListener("click", (event) => {
-    const selectedItem = event.currentTarget;
-    const activeItem = document.querySelector(".active");
-    if (activeItem) {
-      activeItem.classList.remove("active");
-    }
-    accordionItems.forEach((item) => {
-      item.querySelector(".prices__details").classList.remove("active");
-      item.querySelector(".prices__item").classList.remove("active");
-    });
-    selectedItem.querySelector(".prices__details").classList.toggle("active");
-    selectedItem.querySelector(".prices__item").classList.toggle("active");
+document.querySelectorAll(".prices__price").forEach((item) => {
+  item.addEventListener("click", (e) => {
+    document
+      .querySelectorAll(".prices__price .active")
+      .forEach((el) => el.classList.remove("active"));
+    e.currentTarget
+      .querySelectorAll(".prices__item, .prices__details")
+      .forEach((el) => el.classList.add("active"));
   });
 });
+
+//accordion
