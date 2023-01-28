@@ -39,9 +39,20 @@ for (let anchor of anchors) {
 
 //accordion
 
-(function () {
-  document.querySelectorAll(".prices__item").forEach((e) => {
-    let priceDetails = e.nextElementSibling;
-    console.log(priceDetails);
+const accordionItems = document.querySelectorAll(".prices__price");
+
+accordionItems.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    const selectedItem = event.currentTarget;
+    const activeItem = document.querySelector(".active");
+    if (activeItem) {
+      activeItem.classList.remove("active");
+    }
+    accordionItems.forEach((item) => {
+      item.querySelector(".prices__details").classList.remove("active");
+      item.querySelector(".prices__item").classList.remove("active");
+    });
+    selectedItem.querySelector(".prices__details").classList.toggle("active");
+    selectedItem.querySelector(".prices__item").classList.toggle("active");
   });
-})();
+});
