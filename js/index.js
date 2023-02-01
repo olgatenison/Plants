@@ -36,17 +36,3 @@ for (let anchor of anchors) {
     }
   }
 })();
-
-//accordion
-document.querySelectorAll(".prices__price").forEach((item) => {
-  item.addEventListener("click", (e) => {
-    document
-      .querySelectorAll(".prices__price .active")
-      .forEach((el) => el.classList.remove("active"));
-    e.currentTarget
-      .querySelectorAll(".prices__item, .prices__details")
-      .forEach((el) => el.classList.add("active"));
-  });
-});
-
-//accordion

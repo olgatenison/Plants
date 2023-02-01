@@ -767,6 +767,8 @@ body {
   margin-bottom: 12px;
 }
 .prices__order {
+  display: block;
+  text-align: center;
   width: 86px;
   height: 25px;
   border-radius: 10px;
@@ -774,7 +776,6 @@ body {
   font-family: Inter;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.4;
   color: var(--text-light-grey);
   transition: 0.3s all ease;
 }
