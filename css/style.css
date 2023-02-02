@@ -868,6 +868,8 @@ body {
   padding-left: 20px;
   align-items: center;
   position: relative;
+  cursor: pointer;
+  transition: 0.3s all ease;
 }
 
 .contacts__text {
@@ -875,6 +877,7 @@ body {
   line-height: 2;
   font-weight: 400px;
   color: #717171;
+  background-color: transparent;
 }
 .contacts__text::after {
   content: "";
@@ -888,9 +891,79 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #aea1a1;
-
   border-radius: 8px;
   position: absolute;
+}
+.contacts__city:active,
+.contacts__city:hover {
+  background-color: #c1e698;
+  box-shadow: none;
+}
+.contacts__city:active .contacts__text::after,
+.contacts__city:hover .contacts__text::after {
+  background-color: #8ba07e;
+  background-image: url("../assets/img/arrow-white.svg");
+  transform: rotate(180deg);
+}
+
+.option__container {
+  margin-top: 5px;
+  margin-left: -20px;
+  padding: 27px;
+  width: 450px;
+  background-color: #dce9d9;
+
+  transition-duration: 0.3s;
+  transition-delay: 0.4s;
+  overflow: auto;
+  visibility: hidden;
+  height: 0;
+}
+.option__field {
+  display: block;
+  color: #499a18;
+  border-radius: 2px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+.option__field::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #d9d9d9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.option__field:hover {
+  color: #717171;
+}
+.option__field:hover .option__field::after,
+.option__field:active .option__field::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+
+/*Hide default radio styling*/
+.option__list {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+/*Open list when list button is clicked*/
+.contacts__text:focus ~ .option__container {
+  height: 235px;
+  visibility: visible;
 }
 
 @media screen and (max-width: 968px) {
