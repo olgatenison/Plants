@@ -871,9 +871,21 @@ body {
   cursor: pointer;
   transition: 0.3s all ease;
 }
-
+/*Hide default radio styling*/
+.option__list {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+}
 .contacts__text {
   font-size: 20px;
+  width: 450px;
+  height: 50px;
+  text-align: left;
+  line-height: 40px;
+  padding-bottom: 5px;
   line-height: 2;
   font-weight: 400px;
   color: #717171;
@@ -907,15 +919,12 @@ body {
 }
 
 .option__container {
-  margin-top: 5px;
+  margin-top: -5px;
   margin-left: -20px;
   padding: 27px;
   width: 450px;
   background-color: #dce9d9;
 
-  transition-duration: 0.3s;
-  transition-delay: 0.4s;
-  overflow: auto;
   visibility: hidden;
   height: 0;
 }
@@ -941,25 +950,7 @@ body {
 .option__field:hover {
   color: #717171;
 }
-.option__field:hover .option__field::after,
-.option__field:active .option__field::after {
-  content: "";
-  height: 1px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-}
 
-/*Hide default radio styling*/
-.option__list {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  cursor: pointer;
-}
 /*Open list when list button is clicked*/
 .contacts__text:focus ~ .option__container {
   height: 235px;
