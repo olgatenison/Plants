@@ -1,5 +1,7 @@
 //Change list button inner text
 const listItems = document.getElementsByClassName("option__list");
+var x = document.getElementsByClassName("option__list").checked;
+console.log(x);
 
 for (let i = 0; i < listItems.length; ++i) {
   listItems[i].addEventListener("click", function () {

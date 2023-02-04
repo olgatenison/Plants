@@ -1010,6 +1010,10 @@ body {
     font-size: 20px;
     text-align: left;
   }
+  .option__container {
+    width: 300px;
+    text-align: left;
+  }
 }
 /*--------------------------------------*/
 /*Footer*/
