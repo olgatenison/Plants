@@ -973,7 +973,69 @@ body {
   height: auto;
   visibility: visible;
 }
+/* block-list of address details*/
 
+.option__address {
+  background-color: #edf2ec;
+  border-radius: 20px;
+  border: solid #000 1px;
+  padding: 17px 35px 35px 35px;
+  width: 448px;
+  margin-left: -20px;
+  text-decoration: none;
+}
+
+.address__item {
+  padding-left: 133px;
+}
+.address__link-first,
+.address__link-second,
+.address__link-third {
+  text-decoration: none;
+  color: var(--text-light-grey);
+  font-size: 16px;
+  position: relative;
+}
+.address__link-first::before {
+  content: "City:";
+  color: var(--text-black);
+  position: absolute;
+  top: -7px;
+  left: -133px;
+}
+.address__link-second::before {
+  content: "Phone:";
+  color: var(--text-black);
+  position: absolute;
+  top: -7px;
+  left: -133px;
+}
+.address__link-third::before {
+  content: "Office adress:";
+  color: var(--text-black);
+  position: absolute;
+  top: -7px;
+  left: -133px;
+}
+.address__button {
+  margin-top: 24px;
+  display: block;
+  height: 26px;
+  width: 122px;
+  border: solid #e06733 1px;
+  border-radius: 5px;
+  font-family: Inika;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 4px;
+  color: var(--text-light-grey);
+}
+.address__button:hover,
+.address__button:focus {
+  background-color: #e06733;
+  color: white;
+}
 @media screen and (max-width: 968px) {
   .contacts__container {
     margin-top: 40px;
@@ -1008,7 +1070,7 @@ body {
     line-height: 1.28;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
   }
   .contacts__wrapper {
     flex-direction: column-reverse;
@@ -1030,6 +1092,39 @@ body {
   .option__container {
     width: 300px;
     text-align: left;
+  }
+  .option__address {
+    width: 300px;
+    margin-top: -40px;
+    margin-left: -20px;
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 25px;
+  }
+  .address__item {
+    padding-left: 130px;
+    text-align: left;
+  }
+  .address__link-first::before {
+    content: "City:";
+
+    position: absolute;
+    top: -5px;
+    left: -120px;
+  }
+  .address__link-second::before {
+    content: "Phone:";
+    color: var(--text-black);
+    position: absolute;
+    top: -5px;
+    left: -120px;
+  }
+  .address__link-third::before {
+    content: "Office adress:";
+    color: var(--text-black);
+    position: absolute;
+    top: -5px;
+    left: -120px;
   }
 }
 /*--------------------------------------*/
