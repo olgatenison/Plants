@@ -1,31 +1,16 @@
-//Change list button inner text
-/*const listItems = document.getElementsByClassName("option__list");
+const cityBtn = document.querySelector(".contacts__text");
+const itemCity = document.querySelectorAll(".option__list");
+const listContainer = document.querySelector(".option__container");
 
-for (let i = 0; i < listItems.length; ++i) {
-  listItems[i].addEventListener("click", function () {
-    document.getElementsByClassName("contacts__text")[0].innerHTML = this.title;
-  });
-}
-*/
+cityBtn.addEventListener("click", () => {
+  cityBtn.classList.toggle("isOpen");
+  listContainer.classList.toggle("isOpen");
 
-/*
-for (let i = 0; i < radioButtons.length; ++i) {
-  radioButtons[i].addEventListener("change", function () {
-    if (this.checked) {
-      document.getElementsByClassName("contacts__text")[0].textContent =
-        this.parentElement.textContent;
-    }
+  itemCity.forEach((item) => {
+    item.addEventListener("click", () => {
+      cityBtn.textContent = item.title;
+      cityBtn.classList.toggle("isOpen");
+      listContainer.classList.remove("isOpen");
+    });
   });
-}*/
-
-const radioButtons = document.getElementsByClassName("option__list");
-const target = document.getElementsByClassName("contacts__text")[0];
-console.log(target);
-for (let i = 0; i < radioButtons.length; ++i) {
-  radioButtons[i].addEventListener("change", function () {
-    console.log("Event triggered");
-    if (this.checked) {
-      target.textContent = this.parentElement.textContent;
-    }
-  });
-}
+});

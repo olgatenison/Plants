@@ -906,11 +906,13 @@ body {
   border-radius: 8px;
   position: absolute;
 }
+.isOpen.contacts__city,
 .contacts__city:active,
 .contacts__city:hover {
   background-color: #c1e698;
   box-shadow: none;
 }
+.isOpen.contacts__city,
 .contacts__city:active .contacts__text::after,
 .contacts__city:hover .contacts__text::after {
   background-color: #8ba07e;
@@ -938,7 +940,8 @@ body {
   font-size: 16px;
   position: relative;
 }
-.option__field::after {
+.option__field::after,
+.option__field::before {
   content: "";
   height: 1px;
   width: 100%;
@@ -950,10 +953,24 @@ body {
 .option__field:hover {
   color: #717171;
 }
+.option__field::after {
+  background-color: #d9d9d9;
+}
+.option__field::before {
+  display: none;
+}
+.option__field:hover.option__field::after {
+  display: none;
+}
+.option__field:hover.option__field::before {
+  display: block;
+  background-color: #858484;
+}
 
 /*Open list when list button is clicked*/
-.contacts__text:focus ~ .option__container {
-  height: 235px;
+.isOpen.option__container {
+  display: block;
+  height: auto;
   visibility: visible;
 }
 
