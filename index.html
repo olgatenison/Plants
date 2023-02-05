@@ -40,6 +40,7 @@
   </head>
   <body>
     <div class="wrapper">
+      <!--header-->
       <header class="header" id="home">
         <div class="header__container container">
           <a
@@ -86,6 +87,7 @@
       </header>
 
       <main class="main">
+        <!--welcome-->
         <section class="welcome">
           <div class="welcome__container container">
             <img src="assets/img/leafs.png" alt="leafs" class="welcome__img" />
@@ -103,6 +105,7 @@
           </div>
         </section>
 
+        <!--about-->
         <section class="about" id="about">
           <div class="container about__container">
             <div class="about__wrapper">
@@ -126,6 +129,7 @@
           </div>
         </section>
 
+        <!-- service-->
         <section class="service" id="service">
           <div class="service__container container">
             <div class="service__wrapper">
@@ -230,6 +234,7 @@
           </div>
         </section>
 
+        <!-- prices-->
         <section class="prices" id="prices">
           <div class="prices__container container">
             <div class="prices__column">
@@ -277,12 +282,15 @@
               <h3 class="prices__title prices__title-right">
                 Our best <span>gardeners</span> are ready to help you
               </h3>
-              <button class="prices__button button">Contact us</button>
+              <button class="prices__button button">
+                <a href="#contacts">Contact us</a>
+              </button>
               <img src="assets/img/littleleafs.png" alt="leafs" />
             </div>
           </div>
         </section>
 
+        <!-- contacts-->
         <section class="contacts" id="contacts">
           <div class="contacts__container container">
             <h2 class="contacts__title title">Contacts us</h2>
@@ -296,6 +304,7 @@
               <div class="contacts__city option">
                 <button class="contacts__text">City</button>
 
+                <!-- city lists-->
                 <div class="option__container">
                   <label class="option__field">
                     <input
@@ -303,6 +312,7 @@
                       type="radio"
                       name="list"
                       title="Canandaigua, NY"
+                      data-city-id="1"
                     />Canandaigua, NY
                   </label>
                   <label class="option__field">
@@ -311,6 +321,7 @@
                       type="radio"
                       name="list"
                       title="New York City"
+                      data-city-id="2"
                     />New York City
                   </label>
                   <label class="option__field">
@@ -319,6 +330,7 @@
                       type="radio"
                       name="list"
                       title="Yonkers, NY"
+                      data-city-id="3"
                     />Yonkers, NY
                   </label>
                   <label class="option__field">
@@ -327,11 +339,73 @@
                       type="radio"
                       name="list"
                       title="Sherrill, NY"
+                      data-city-id="4"
                     />Sherrill, NY
                   </label>
                 </div>
 
-                <div class="option__address address">
+                <!-- first start-->
+                <div class="option__address address address-1">
+                  <ul class="address__list">
+                    <li class="address__item">
+                      <a class="address__link link address__link-first" href=""
+                        >Canandaigua, NY
+                      </a>
+                    </li>
+                    <li class="address__item">
+                      <a
+                        class="address__link link address__link-second"
+                        href="tel:+15853930001"
+                        >+1 585 393 0001</a
+                      >
+                    </li>
+                    <li class="address__item">
+                      <a class="address__link link address__link-third"
+                        >151 Charlotte Street</a
+                      >
+                    </li>
+                    <li class="address__item">
+                      <a
+                        class="address__link address__button link"
+                        href="tel:+19146780003"
+                        >Call us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- first cart end -->
+                <!-- second start-->
+                <div class="option__address address address-2">
+                  <ul class="address__list">
+                    <li class="address__item">
+                      <a class="address__link link address__link-first" href=""
+                        >New York City
+                      </a>
+                    </li>
+                    <li class="address__item">
+                      <a
+                        class="address__link link address__link-second"
+                        href="tel:+12124560002"
+                        >+1 212 456 0002</a
+                      >
+                    </li>
+                    <li class="address__item">
+                      <a class="address__link link address__link-third"
+                        >9 East 91st Street</a
+                      >
+                    </li>
+                    <li class="address__item">
+                      <a
+                        class="address__link address__button link"
+                        href="tel:+12124560002"
+                        >Call us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- second cart end -->
+                <!-- third start-->
+                <div class="option__address address address-3">
                   <ul class="address__list">
                     <li class="address__item">
                       <a class="address__link link address__link-first" href=""
@@ -359,12 +433,44 @@
                     </li>
                   </ul>
                 </div>
+                <!-- third cart end -->
+                <!-- fourth start-->
+                <div class="option__address address address-4">
+                  <ul class="address__list">
+                    <li class="address__item">
+                      <a class="address__link link address__link-first" href=""
+                        >Sherrill, NY
+                      </a>
+                    </li>
+                    <li class="address__item">
+                      <a
+                        class="address__link link address__link-second"
+                        href="tel:+13159080004"
+                        >+1 315 908 0004</a
+                      >
+                    </li>
+                    <li class="address__item">
+                      <a class="address__link link address__link-third"
+                        >14 WEST Noyes BLVD</a
+                      >
+                    </li>
+                    <li class="address__item">
+                      <a
+                        class="address__link address__button link"
+                        href="tel:+13159080004"
+                        >Call us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- fourth cart end -->
               </div>
             </div>
           </div>
         </section>
       </main>
 
+      <!-- footer-->
       <footer class="footer">
         <div class="footer__container container">
           <div class="footer__left">
@@ -420,6 +526,7 @@
         </div>
       </footer>
     </div>
+
     <script src="js/index.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/select.js"></script>
