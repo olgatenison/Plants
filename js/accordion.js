@@ -10,7 +10,6 @@ accordionContant.forEach((item, index) => {
     item.classList.toggle("active");
     description.classList.toggle("active");
 
-    console.log(description);
     removeOpen(index);
   });
 });
