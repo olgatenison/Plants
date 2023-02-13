@@ -1,11 +1,42 @@
 const serviseBtn = document.querySelectorAll(".service__button");
 console.log(serviseBtn);
+const cards = document.querySelectorAll(".service__item");
+console.log(cards);
 
-const cards = document.querySelectorAll(".card");
+let activeButtons = 0;
 
-// loop through each button and add a click event listener
 serviseBtn.forEach((button) => {
   button.addEventListener("click", (e) => {
+    if (activeButtons < 2) {
+      const buttonText = button.textContent;
+      cards.forEach((card) => {
+        if (card.dataset.title === buttonText) {
+          card.classList.add("active");
+          activeButtons++;
+        }
+      });
+    }
+  });
+});
+
+/* 
+serviseBtn.forEach((button) => {
+  // loop through each button and add a click event listener
+  button.addEventListener("click", (e) => {
+    const buttonText = button.textContent;
+    console.log(button.textContent);
+
+    cards.forEach((card) => {
+      if (card.dataset.title === buttonText) {
+        card.classList.add("active");
+      } else {
+        card.classList.remove("active");
+      }
+    });
+  });
+});
+
+ 
     // remove active class from all buttons
     serviseBtn.forEach((b) => b.classList.remove("active"));
     // add active class to clicked button
@@ -24,7 +55,7 @@ serviseBtn.forEach((button) => {
   });
 });
 
-// add focus and blur event listeners to the cards
+add focus and blur event listeners to the cards
 cards.forEach((card) => {
   card.addEventListener("focus", (e) => {
     e.target.style.backgroundColor = "lightgray";
@@ -33,4 +64,4 @@ cards.forEach((card) => {
     e.target.style.backgroundColor = "white";
   });
 });
-//*This code first selects all the buttons and cards using querySelectorAll() and stores them in the buttons and cards variables, respectively. Then, it adds a click event listener to each button. When a button is clicked, the event listener removes the active class from all buttons, adds the active class to the clicked button, and loops through each card. If the card's title matches the text of the clicked button, the card is displayed. Otherwise, the card is hidden. Finally, it adds focus and blur event listeners to the cards. When a card is in focus, its background color is set to light gray. When a card is blurred, its background color is set to white. */
+*/
