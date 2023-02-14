@@ -640,10 +640,13 @@ body {
   color: var(--text-light-grey);
   margin-bottom: 36px;
 }
-.onblur {
+.onBlur {
   filter: blur(5px);
 }
-
+.outOfBlur {
+  filter: blur(0px);
+  display: block;
+}
 /*-----------------
 .service__list:hover .service__item {
   filter: blur(5px);
