@@ -14,7 +14,7 @@ _____________________________________________________________
 - using JavaScript to implement the functionality specified in the task
 _____________________________________________________________
 
-##The project consists of the following blocks 
+## The project consists of the following blocks 
 (valid semantic layout. The landing matches the layout):
 
 - header
