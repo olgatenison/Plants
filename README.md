@@ -1,3 +1,4 @@
+![preview](https://github.com/olgatenison/Plants/blob/main/assets/img/plant%20(1).jpg?raw=true)
 # Plants
 [study project](https://olgatenison.github.io/Plants/)
 _____________________________________________________________
